@@ -6,7 +6,7 @@
     </head>
     <body bgcolor="d3ae53">
         <h2><font face="arial">reservar</font></h2>
-        <p><b>por favor rellene todo los campos</b></p>
+        <p><b>por favor rellene todos los campos</b></p>
         <form action="">
             <fieldset ><legend>datos personales</legend>
             <p>
@@ -17,7 +17,90 @@
                 correo electronico <input type="email" name="mail" id="">
             </p>
         </fieldset>
-        
+            <fieldset><legend>Datos de reserva</legend>
+                <p>
+                numero de noches <input type="text" size="5" maxlength="2"><br> fecha:
+                <select name="meses" id="selec1">
+                    <option value="mes"selected="selected">mes</option>
+                    <option value="enero" >enero</option>
+                    <option value="febrero">febrero</option>
+                    <option value="marzo">marzo</option>
+                    <option value="abril">abril</option>
+                    <option value="mayo">mayo</option>
+                    <option value="junio">junio</option>
+                    <option value="julio">julio</option>
+                    <option value="agosto">agosto</option>
+                    <option value="septiembre">septiembre</option>
+                    <option value="octubre">octubre</option>
+                    <option value="noviembre">noviembre</option>
+                    <option value="diciembre">diciembre</option>
+                </select>
+                <select name="dia" id="selec2">
+                    <option value="dia" selected="selected">d&iacute;a</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select><br>
+                tipo de habitacion: <br>
+                cabaña <input type="radio" name="tipo" value="cabaña"> matrimonio <input type="radio" name="cama" value="matrimonio">
+                cantidad de camas extra:
+                <select name="numeroSup" id="">
+                    <option value="0"selected="selected">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                 <br>
+                edificio central <input type="radio" name="tipo" value="habitacion"> dos individuales <input type="radio" name="cama" value="individuales"> <br>
+                Servicio de restauracion:(todos estos servicios van incluidos menos los extras indicados en carta) <br>
+                desayuno<input type="checkbox" name="servicio" value="desayuno" ><br>
+                comida<input type="checkbox" name="servicio" value="comida" ><br>
+                cena<input type="checkbox" name="servicio" value="cena" ><br>
+                <input type="button" value="enviar"><input type="button"value="limpiar">
+                </p>    
+            </fieldset>
         </form>
+        <form action="text/html"><fieldset><legend>opinion</legend>
+            <p>
+                si lo desea complete el siguiente cuestionario para darnos su opinion sobre la experiencia la pagina <br>
+               experiencia: buena<input type="radio" name="experiencia" value="buena">
+                mala<input type="radio" name="experiencia" value="mala"><br>
+                por favor expliquenos porque: <br>
+                <textarea name="opinion"  cols="60" rows="10"></textarea><br>
+                <input type="button" value="enviar"><input type="button" value="limpiar">
+            </p>
+        </fieldset>
+        </form>
+       <h3> <a href="paginaPrincipalHotel.html">pagina principal</a>&nbsp;&nbsp;<a href="hotelInformacion.html">Informacion y precios</a></h3>
     </body>
 </html>
