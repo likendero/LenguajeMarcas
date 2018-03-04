@@ -1,0 +1,106 @@
+/*-------------------------------------------------------------
+General
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body { }
+ul { margin: 0; padding: 0; list-style: none; }
+ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img {
+    border: none; 
+    
+}
+/*-------------------------------------------------------------
+Layout
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#contenedor {
+width: 90%;
+max-width: 900px;
+width: expression(document.body.clientWidth > 901? "900px": "auto");
+margin: 0 auto;
+}
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario,
+#pie {
+border: 2px solid #777;
+}
+/*1º DAW Curso 2017/2018 Profesor: Andrés Rubio del Río 4
+Lenguajes de Marcas y Sistemas de Gestión de la Información
+UT 3: Hojas de estilos - CSS
+Actividades Vol. II*/
+#cabecera {
+    padding: 1em;
+    clear: both;
+}
+#menu {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    clear: both;
+}
+#lateral {
+    padding: 0.5em;
+    float: left;
+    width: 18%;
+}
+#contenido {
+    padding: 0.5em;
+    float: right;
+    width: 79%;
+    padding: 0;
+}
+#contenido #principal {
+    padding: 0.5em;
+    float: left;
+    width: 73%;
+}
+#contenido #secundario {
+    padding: 0.5em;
+    float: right;
+    width: 20%;
+}
+#pie {
+    padding-bottom: 0.5;
+    clear: both;
+}
+/*-------------------------------------------------------------
+Enlaces
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*-------------------------------------------------------------
+Secciones
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*Cabecera
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+/*1º DAW Curso 2017/2018 Profesor: Andrés Rubio del Río 5
+Lenguajes de Marcas y Sistemas de Gestión de la Información
+UT 3: Hojas de estilos - CSS
+Actividades Vol. II*/
+/*Menu
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#menu ul#menu_principal { }
+#menu ul#menu_principal li { display: inline; float: left; }
+/*Contenidos
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*Principal
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#contenido #principal .articulo img { width: 100px; float: left; }
+#contenido #principal .articulo { }
+.articulo{
+    margin: 1em;
+}
+/*Secundario
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*Lateral
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#lateral #publicidad {
+    margin-bottom: 1em;
+ }
+/*Pie
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#pie {
+    margin-top: 1em;
+}
+#pie .enlaces { float: left; }
+#pie .copyright { float: right; }
+
+

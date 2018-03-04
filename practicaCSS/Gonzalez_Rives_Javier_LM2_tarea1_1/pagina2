@@ -1,0 +1,11 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <title>segunda p&aacute;gina</title>
+    </head>
+    <body bgcolor="black">
+        <h1><font color="white">patata</font></h1>
+        <a href="miPrimeraPagina.html">p&aacute;gina anterior</a>
+    </body>
+</html>

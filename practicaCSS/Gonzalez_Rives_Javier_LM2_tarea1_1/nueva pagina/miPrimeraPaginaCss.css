@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*GENERALES*/
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1,h2{
+    margin: 1em;
+    padding: 1em;
+    border-width: 1px;
+    border-color: #a200ff;
+    border-style: solid;
+    background-color: red;
+}
+p{
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+/*
+id para dividir la parte del titulo, parte de arriba
+*/
+#titulo{
+    float:left;
+    width: 100%;
+}
+/*
+parte de la foto y el titulo
+*/
+#tituloContenido{
+    float: left;
+    width: 100%
+}
+/* foto */
+#tituloFoto{
+    float:left;
+    width: 30%;
+}
+#tituloFoto img{
+    float: right;
+    width: 100px;
+    margin-left: 1em; 
+}
+/* tituloH */
+#tituloH{
+    float: left;
+    width: auto;
+}
+/*parte del parrafo*/
+#tituloPie{
+    float:left;
+}
+#tituloPie p{
+    margin: 1em;
+    padding: 0.5em;
+    border-style: dashed;
+    border-color: black;
+}
+/*
+######################################################333
+*/
+/* 
+    parte del cuerpo, sobre todo el tema de las listas
+*/
+#cuerpo{
+float: left;
+width: 100%;
+}
+#cuerpo h2{
+    background-color:yellow;
+}
+/*
+lista de definiciones
+*/
+#listaDef{
+    float: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#listaDef dl{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*titulo*/
+#listaDefTitulo{
+    float:left;
+    width: 100%;
+}
+/*contenido*/
+#listaDefContenido{
+float:left;
+width: 95%;
+margin: 1em;
+padding: 1em;
+border-color: blueviolet;
+border-style: dotted;
+}
+/*
+#########################################################
+*/
+/*
+Lista desordenada
+*/
+#listaDes{
+    width: 100%;
+    float: left;
+}
+/*Titulo*/
+#listaDesTitulo{
+    width: 100%;
+    float: left;
+}
+/*texto*/
+#listasDesFoto{
+    float: left;
+    width: 30%;
+}
+#listasDesFoto img{
+    width: 100px ;
+    float: right;
+}
+/*foto*/
+#listasDesTexto{
+    float: left;
+    width: auto;
+}
