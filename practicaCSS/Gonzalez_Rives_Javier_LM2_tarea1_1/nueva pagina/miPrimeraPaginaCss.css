@@ -118,11 +118,72 @@ Lista desordenada
     width: 30%;
 }
 #listasDesFoto img{
-    width: 100px ;
-    float: right;
+   width: 300px;
+   float: right;
 }
 /*foto*/
 #listasDesTexto{
     float: left;
-    width: auto;
+    width: 70%;
+}
+/*
+lista desordenada
+*/
+#listasDeslista{
+    width: 80%;
+    float: left;
+    margin: 1em;
+    padding: 1em;
+    border-style: double;
+    border-color: chocolate; 
+}
+#listasDeslista ul{
+    list-style: circle;
+}
+
+#listasDeslista li:hover{
+    color: deeppink;
+}
+/*
+##################################################################
+*/
+/*lista ordenada*/
+#listaOrdenada{
+    float: left;
+    width: 100%;
+}
+/*
+titulo
+*/
+#listaOrdenada .titulo{
+    width: 100%;
+    float: left;
+}
+/*
+imagen patata
+*/
+#listaOrdenada .titulo .imagen{
+    float: left;
+    width: 30%;
+}
+#listaOrdenada .titulo .imagen img{
+    width: 300px;
+    float: right;
+}
+/*texto*/
+#listaOrdenada .titulo .texto{
+    float: left;
+    width: 70%;
+}
+/*
+lista ordenada
+*/
+#listaOrdenada .lista{
+    width: 50%;
+    float: left;
+    padding: 1em;
+    margin: 1em;
+    border-style: groove;
+    border-color: yellowgreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
