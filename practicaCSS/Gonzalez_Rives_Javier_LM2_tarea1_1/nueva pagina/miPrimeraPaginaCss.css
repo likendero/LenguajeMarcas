@@ -187,3 +187,22 @@ lista ordenada
     border-color: yellowgreen;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/*##########################################################*/
+/*
+tablas
+*/
+#tablas{
+    float: left;
+    width: 100%;
+}
+/*Titulo*/
+#tablas .titulo{
+    float:left;
+    width: 100%;
+}
+/*Contenido*/
+#tablas .contenido{
+    float: left;
+    width: 80%;
+    
+}

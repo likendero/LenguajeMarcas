@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="miPrimeraPaginaCss.css">
     <title>Mi primera p&aacute;gina css</title>
+    <style>
+    table{
+        border-color: black;
+        border-style: solid;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        background-color: orange; 
+        margin: 1em;
+    }
+    td,tr{
+        border-color: black;
+        border-style: solid;
+        border-spacing: 0px;
+        padding: 0.5em;
+    }
+    tr:hover{
+        background-color: red;
+    }
+    td:hover{
+        background-color: blue;
+    }
+    .resaltar{
+        background-color: pink;
+    }
+    .recreo{
+        background-color: purple;
+    }
+    
+    </style>
 </head>
 <body>
     <div>
@@ -114,6 +143,66 @@
                         </ol>
                 </div>
             </div>
+            <!-- tabla -->
+            <div id = "tablas">
+                <div class = "titulo">
+                    <h2>mi horario</h2>
+                </div>
+                <div class = "contenido">
+                    <table >
+                        <tr class = "resaltar">
+                            <td>horas</td>
+                            <td>lunes</td>
+                            <td>martes</td>
+                            <td>mi&eacute;rcoles</td>
+                            <td>jueves</td>
+                            <td>viernes</td>
+                        </tr>
+                        <tr>
+                            <td>primera hora</td>
+                            <td rowspan="2">SSII</td>
+                            <td rowspan="2">Entornos</td>
+                            <td rowspan="2">SSII</td>
+                            <td rowspan="2">programacion</td>
+                            <td>Entornos</td>
+                        </tr>
+                        <tr>
+                            <td>segunda hora</td>
+                            <td rowspan="2">lenguaje de marcas</td>
+                        </tr>
+                        <tr>
+                            <td>tercera hora</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>base de datos</td>
+                        </tr>
+                        <tr class = "recreo">
+                            <td colspan="6">recreo</td>
+                        </tr>
+                        <tr>
+                            <td>cuarta hora</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>base de datos</td>
+                            <td rowspan="2">SSII</td>
+                        </tr>
+                        <tr>
+                            <td>quinta hora</td>
+                            <td rowspan="2">base de datos</td>
+                            <td rowspan="2">base de datos</td>
+                            <td rowspan="2">LLMM</td>
+                            <td rowspan="2">FOL</td>
+                        </tr>
+                        <tr>
+                            <td>sexta hora</td>
+                            <td>FOL</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- fin de la pagina -->
         </div>
     </div>
 </body>
