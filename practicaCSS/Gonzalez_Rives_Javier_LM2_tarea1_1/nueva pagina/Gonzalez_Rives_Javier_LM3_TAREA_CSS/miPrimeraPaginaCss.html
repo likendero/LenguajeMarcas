@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="miPrimeraPaginaCss.css">
+    <title>Mi primera p&aacute;gina css</title>
+    <style>
+    table{
+        border-color: black;
+        border-style: solid;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        background-color: orange; 
+        margin: 1em;
+    }
+    td,tr{
+        border-color: black;
+        border-style: solid;
+        border-spacing: 0px;
+        padding: 0.5em;
+    }
+    tr:hover{
+        background-color: red;
+    }
+    td:hover{
+        background-color: blue;
+    }
+    .resaltar{
+        background-color: pink;
+    }
+    .recreo{
+        background-color: purple;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <!-- parte del titulo  -->
+        <div id = "titulo">
+            <!-- parte de arriba con titulo y foto -->
+            <div id = "tituloContenido">
+                <div id = "tituloFoto">
+                    <img src="https://lh3.googleusercontent.com/oe1VzPkh1kUweR7bDG_OZUzRs2wsNE5hwyWl-j1xcvXgb1IegnBN9yZb7Xrn6tpBrbG1o00T5Bq_YbEsSEbx1iAN3mOIISinspIXedIjKSeT5Y4vXjOSX1hd2sF4ryHvrklivAwPqYYH5pDpJW7Fx-yv0W9QMwC1j2Fbqglfq_tBhJ1cEvb3FnC02ZedNYuIEl61Y0ZBGftuEA4lLtxzVT3Wki1OBMOj_lLq3ktcW9I9OLaKpyT5mMyUHatKcZLMRRxZKY2rzpe1Nf14U_ffVqdbRYabcDJOl4XIaX59DffKioF1WvS9qj_E6y5wax-nLDW7QtYd8fjiee-1cawHXxoE_wSPXnuKL6k1qHJFGKb8czn5tS365wVkc615CrQww5z4BFmE1YQf4DdMtrcr8qrn6Ft4Q6uFyU7Lb8_F-9AjTfG5ITx0zVbenLlMD4sbBH6drudij4roJoHW2tZIXxCKXAGcvAml7_E5c2c0tMc5mUUgS2NMnDDSvR5foOlIyp69a_zv5Gk4IGFOhp_E4jArdAXkyOIYYUTfkcMee5c3UyUxM1BYfc7GKV2MbdbCJupY2NBzxMqOfZmNo_pwQtySv5igO-VIuwYVA1kaJTxEtodJ7P257ZhWpJU8GLyrKo3LvJIcMfSGn7TXN3riuLaBCQnhbc8ofYX-=w291-h517-no" >
+                </div>
+                <div id = "tituloH">
+                    <h1>mi primera p&aacute;gina</h1>
+                </div>
+            </div>
+            <!-- parte de "abajo" con texto bordeado -->
+            <div id = "tituloPie">
+                <p>
+                    Yo eleg&iacute; este ciclo formativo tras haber hecho un primero de carrera
+            no muy satisfactorio y convulso, mi idea principal es dedicarme al desarrollo pero en 
+            la carrera se hace mucho &eacute;nfasis en partes que no me interesan tanto como los fundamentos físicos
+            que si bien esta saberlos se estudian en demasiada profundidad.
+                </p>
+            </div>
+            <!-- parte del cuerpo -->
+        </div>
+        <div id = "cuerpo">
+            <!-- lista de definiciones -->
+            <div id = "listaDef">
+                <!-- titulo de las definicipones -->
+                <div id = "listaDefTitulo" >
+                    <h2 style = "background-color: blue;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Qu&eacute; me han parecido las asignaturas</h2>
+                </div>
+                <!-- lista con def -->
+                <div id = "listaDefContenido">
+                        <dl>
+                                <dt>Bases de Datos</dt>
+                                <dd>es una asignatura relativamente complicada debido a la cantidad de conceptos
+                                    pero eso la hace muy interesante
+                                </dd>
+                                <dt>Lenguajes de Marcas</dt>
+                                <dd>Nunca me ha interesado mucho este tipo de &quot;programaci&oacute;n&quot; pero me esta llamando mucho 
+                                    la atenci&oacute;n y me inspira para hacer mis propios proyectos
+                                </dd>
+                                <dt>Entornos de Desarrollo</dt>
+                                <dd>Oida por alguien ajeno al ciclo no deja muy claro que se va a dar exactamente
+                                    pero una vez que empiezas a darla te das cuenta que una asignatura mu instructiva
+                                </dd>
+                                <dt>FOL</dt>
+                                <dd>Es la asignatura que m&aacute;s se sale del &aacute;mbito de la inform&aacutetica,
+                                     pero es muy &uacute;til saber ciertas cosas del mundo laboral que nos espera
+                                </dd>
+                                <dt>Sistemas Inform&aacute;ticos</dt>
+                                <dd>Es la asignatura que explica todo aquello que va en paralelo al desarrollo, como es Hardware
+                                    o la trata binaria de los datos hasta incluso sistemas operativos y redes
+                                </dd>
+                                <dt>Programaci&oacute;n</dt>
+                                <dd>Es la asignatura principal, como es tan importante tener una buena base se va muy lento
+                                    ademas se trabaja much&iacute;simo y no es nada f&aacute;cil pero es la que mas me <font color="blue"><u><dfn title="me gustan los desafios">gusta</dfn></u></font>
+                                </dd>
+                        </dl>
+                </div>
+            </div>
+            <!-- fin def -->
+            <div id = "listaDes">
+                <!-- titulo -->
+                <div id = "listasDesTitulo">
+                    <div id = "listasDesFoto">
+                        <img src="https://www.specializedconceptstore.co.uk/content/products/2017-s-works-tarmac-etap_7419.jpg" alt="">
+                    </div>
+                    <div id = "listasDesTexto">
+                        <h2>mis Aficiones</h2>
+                    </div>
+                </div>
+                <!-- lista -->
+                <div id = "listasDeslista">
+                        <ul>
+                            <li>Montar en bici(CARRETERA)</li>
+                            <li>Jugar con el ordenador</li>
+                            <li>Programar</li>
+                        </ul>
+                </div>
+            </div>
+            <!-- fin lista desordenada -->
+            <div id = "listaOrdenada">
+                <!-- titulo -->
+                <div class = "titulo">
+                    <div class = "imagen">
+                        <img src="https://biotrendies.com/wp-content/uploads/2015/06/patata.jpg" alt="patata">
+                    </div>
+                    <div class = "texto">
+                        <h2>como lavar una patata</h2>
+                    </div>
+                </div>
+                <!-- lista ordenada -->
+                <div class = "lista">
+                        <ol>
+                            <li> abrir el saco de patatas</li>
+                            <li>coger una patata del tamaño deseado</li>
+                            <li>dar una primera sacudida para quitarle la tierra</li>
+                            <li>preparar un cubo con fairi o el sustituto de marca blanca y agua</li>
+                            <li>cojer un estropajo y mojarlo en la mezcla del cubo</li>
+                            <li>agarrar la patata y re alizar los siguientes movimientos</li>
+                                <ol>
+                                    <li>frotar arriba</li>
+                                    <li>frotar abajo</li>
+                                </ol>
+                            <li>una vez que est&eacute; como una patena tirarla a la basura</li>
+                        </ol>
+                </div>
+            </div>
+            <!-- tabla -->
+            <div id = "tablas">
+                <div class = "titulo">
+                    <h2>mi horario</h2>
+                </div>
+                <div class = "contenido">
+                    <table >
+                        <tr class = "resaltar">
+                            <td>horas</td>
+                            <td>lunes</td>
+                            <td>martes</td>
+                            <td>mi&eacute;rcoles</td>
+                            <td>jueves</td>
+                            <td>viernes</td>
+                        </tr>
+                        <tr>
+                            <td>primera hora</td>
+                            <td rowspan="2">SSII</td>
+                            <td rowspan="2">Entornos</td>
+                            <td rowspan="2">SSII</td>
+                            <td rowspan="2">programacion</td>
+                            <td>Entornos</td>
+                        </tr>
+                        <tr>
+                            <td>segunda hora</td>
+                            <td rowspan="2">lenguaje de marcas</td>
+                        </tr>
+                        <tr>
+                            <td>tercera hora</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>base de datos</td>
+                        </tr>
+                        <tr class = "recreo">
+                            <td colspan="6">recreo</td>
+                        </tr>
+                        <tr>
+                            <td>cuarta hora</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>programacion</td>
+                            <td>base de datos</td>
+                            <td rowspan="2">SSII</td>
+                        </tr>
+                        <tr>
+                            <td>quinta hora</td>
+                            <td rowspan="2">base de datos</td>
+                            <td rowspan="2">base de datos</td>
+                            <td rowspan="2">LLMM</td>
+                            <td rowspan="2">FOL</td>
+                        </tr>
+                        <tr>
+                            <td>sexta hora</td>
+                            <td>FOL</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- fin de la pagina -->
+        </div>
+    </div>
+</body>
+</html>
