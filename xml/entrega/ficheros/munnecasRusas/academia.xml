@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<academia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="academia.xsd">
+    <alumno nivel="básico">
+        <nombre>Luís</nombre>
+        <apellidos>Motas Macías</apellidos>
+        <fecha_nacimiento>1990-08-23</fecha_nacimiento>
+        <notas>
+            <trim>4</trim>
+            <trim>7</trim>
+        </notas>
+        <telefonos>
+            <telefono>786666555</telefono>
+            <telefono>957664534</telefono>
+        </telefonos>
+    </alumno>
+    <alumno nivel="intermedio">
+        <nombre>María</nombre>
+        <apellidos>Sosa García</apellidos>
+        <fecha_nacimiento>1987-11-02</fecha_nacimiento>
+        <notas>
+            <trim>3</trim>
+            <trim>8</trim>
+        </notas>
+        <telefonos>
+            <telefono>958999655</telefono>
+        </telefonos>
+    </alumno>
+</academia>

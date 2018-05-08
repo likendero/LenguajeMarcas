@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<!-- nombre, limite de 50 caracteres -->
+<xs:element name = "nombre">
+	<xs:simpleType>
+		<xs:restriction base = "xs:string">
+			<xs:maxLength value = "50"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<!-- apellido limite de 50 caracteres -->
+<xs:element name = "apellidos">
+	<xs:simpleType>
+		<xs:restriction base = "xs:string">
+			<xs:maxLength value = "50"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name = "fecha_nacimiento" type = "xs:date"/>
+<xs:element name = "trim" >
+<xs:simpleType>
+	<xs:restriction base = "xs:decimal">
+		<xs:minInclusive value = "0"/>
+		<xs:maxInclusive value = "10"/>
+	</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:simpleType name = "nivel">
+	<xs:restriction base = "xs:string">
+		<xs:enumeration value = "básico"/>
+		<xs:enumeration value = "intermedio"/>
+		<xs:enumeration value = "alto"/>
+	</xs:restriction>
+</xs:simpleType>
+<xs:element name = "telefono">
+<xs:simpleType>
+	<xs:restriction base = "xs:integer">
+		<xs:maxInclusive value = "9999999999"/>
+	</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<!-- Elementos compuestos -->
+<xs:element name = "notas">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "trim" minOccurs = "1" maxOccurs = "unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:element name = "telefonos">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref = "telefono" minOccurs = "1" maxOccurs = "unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+<xs:element name = "alumno">
+	<xs:complexType>
+		<xs:all>
+			<xs:element ref = "nombre"/>
+			<xs:element ref = "apellidos"/>
+			<xs:element ref = "fecha_nacimiento"/>
+			<xs:element ref = "notas"/>
+			<xs:element ref = "telefonos"/>
+		</xs:all>
+		<xs:attribute name = "nivel" type = "nivel"/>
+	</xs:complexType>
+</xs:element>
+<xs:element name = "academia">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element ref = "alumno" minOccurs = "1" maxOccurs = "unbounded"/>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

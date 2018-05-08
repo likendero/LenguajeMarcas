@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!-- declaracion del esquema -->
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<!-- declaracion del elemento Raiz -->
+<xs:element name = "academia">
+<xs:complexType>
+<xs:sequence>
+	<!-- declaracion del alumno :0 -->
+    <xs:element name = "alumno" maxOccurs = "unbounded">
+    <xs:complexType>
+    	<xs:all>
+    		<!-- sub elementos del elemento alumno -->
+    		<xs:element name = "nombre" type = "xs:string"  />
+    		<xs:element name = "apellidos" type = "xs:string"  />
+    		<xs:element maxOccurs="1" name="fecha_nacimiento" type="xs:string"/>
+    		<!-- sub elemento compuesto notas -->
+    		<xs:element maxOccurs="1" name="notas">
+    		<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name = "trim" type = "xs:integer" minOccurs="0" 
+    			maxOccurs="unbounded"/>
+			</xs:sequence>
+    		</xs:complexType>
+    		</xs:element>
+    		<!-- sub elemento compuesto telefonoS -->
+    		<xs:element name = "telefonos">
+    		<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name = "telefono" type = "xs:integer"  
+    			minOccurs = "0"  maxOccurs = "unbounded"/>
+    		</xs:sequence>
+    		</xs:complexType>
+    		</xs:element>
+    	</xs:all>
+    	<!-- atributos de alumno -->
+    	<xs:attribute name = "nivel" type = "xs:string" use = "required" />
+    </xs:complexType>
+    </xs:element>
+    <!-- fin del elemento principal -->
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<!-- definicon de nivel -->
+<xs:simpleType name = "nivel">
+	<xs:restriction base = "xs:string">
+		<xs:enumeration value = "básico"/>
+		<xs:enumeration value = "intermedio"/>
+		<xs:enumeration value = "alto"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+</xs:schema>

@@ -1,0 +1,81 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!-- declaracion del esquema -->
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+<!-- declaracion del elemento Raiz -->
+<xs:element name = "academia">
+<xs:complexType>
+<xs:sequence>
+	<!-- declaracion del alumno :0 -->
+    <xs:element name = "alumno" maxOccurs = "unbounded">
+    <xs:complexType>
+    	<xs:all>
+    		<!-- sub elementos del elemento alumno -->
+    		<!-- tanto el elemento nombre como el elemento apellido llevan
+    		una restriccion en el numero de caracteres-->
+    		<xs:element name = "nombre" >
+    			<xs:simpleType>
+    				<xs:restriction base = "xs:string">
+    					<xs:maxLength value = "50"/>
+    				</xs:restriction>
+    			</xs:simpleType>
+			</xs:element>
+    		<xs:element name = "apellidos" >
+    			<xs:simpleType>
+    				<xs:restriction base = "xs:string">
+    					<xs:maxLength value = "50"/>
+    				</xs:restriction>
+    			</xs:simpleType>
+    		</xs:element>
+    		<xs:element maxOccurs="1" name="fecha_nacimiento" type="xs:date"/>
+    		<!-- sub elemento compuesto notas -->
+    		<xs:element maxOccurs="1" name="notas">
+    		<xs:complexType>
+    		<xs:sequence>
+    		<!-- trim usa un rango en el que pueden estar las notas -->
+    			<xs:element name = "trim"  minOccurs="0" 
+    			maxOccurs="unbounded">
+    			<xs:simpleType>
+    				<xs:restriction base = "xs:decimal">
+    					<xs:minInclusive value = "0"/>
+    					<xs:maxInclusive value = "10"/>
+    				</xs:restriction>
+    			</xs:simpleType>
+    			</xs:element>
+			</xs:sequence>
+    		</xs:complexType>
+    		</xs:element>
+    		<!-- sub elemento compuesto telefonoS -->
+    		<xs:element name = "telefonos">
+    		<xs:complexType>
+    		<xs:sequence>
+    			<xs:element name = "telefono"   
+    			minOccurs = "0"  maxOccurs = "unbounded">
+    			<xs:simpleType>
+    				<xs:restriction base = "xs:integer">
+    				<xs:maxInclusive value = "9999999999"/>
+    				</xs:restriction>
+    			</xs:simpleType>
+    			</xs:element>
+    		</xs:sequence>
+    		</xs:complexType>
+    		</xs:element>
+    	</xs:all>
+    	<!-- atributos de alumno -->
+    	<xs:attribute name = "nivel" type = "xs:string" use = "required" />
+    </xs:complexType>
+    </xs:element>
+    <!-- fin del elemento principal -->
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<!-- definicon de nivel -->
+<xs:simpleType name = "nivel">
+	<xs:restriction base = "xs:string">
+		<xs:enumeration value = "b�sico"/>
+		<xs:enumeration value = "intermedio"/>
+		<xs:enumeration value = "alto"/>
+	</xs:restriction>
+</xs:simpleType>
+
+
+</xs:schema>

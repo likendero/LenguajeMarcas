@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="libro.xsl"?>
+<libros> 
+	<libro> 
+		<titulo>Los tres mosqueteros</titulo> 
+		<autor>Alejandro Dumas</autor> 
+		<precio>19</precio> 
+	</libro> 
+	<libro> 
+		<titulo>Rayuela</titulo> 
+		<autor>Julio Cortázar</autor> 
+		<precio>15.5</precio> 
+	</libro> 
+</libros> 

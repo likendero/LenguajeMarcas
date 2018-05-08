@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<!-- Enlace a la transformación XSL -->
+<?xml-stylesheet type="text/xsl" href="defensa.xsl"?>
+<equipo>
+<nombre>Almeria C.F</nombre>
+<entrenador>
+<nombre>Unay</nombre>
+<apellidos>Emery</apellidos>
+<sueldo>4500</sueldo>
+</entrenador>
+<jugador>
+<nombre>Diego</nombre>
+<apellidos>Alves</apellidos>
+<sueldo>5800.25</sueldo>
+<dorsal>1</dorsal>
+<puesto>Portero</puesto>
+</jugador>
+<jugador>
+<nombre>Esteban</nombre>
+<apellidos>Suarez</apellidos>
+<sueldo>1900.75</sueldo>
+<dorsal>13</dorsal>
+<puesto>Portero</puesto>
+</jugador>
+<jugador>
+<nombre>Hernán</nombre>
+<apellidos>Darío Perellano</apellidos>
+<sueldo>1999.25</sueldo>
+<dorsal>4</dorsal>
+<puesto>Defensa</puesto>
+</jugador>
+<jugador>
+<nombre>Luna</nombre>
+<apellidos>Luna</apellidos>
+<sueldo>7800.25</sueldo>
+<dorsal>14</dorsal>
+<puesto>Defensa</puesto>
+</jugador>
+<jugador>
+<nombre>Michele</nombre>
+<apellidos>Jakobsen</apellidos>
+<sueldo>8800.25</sueldo>
+<dorsal>2</dorsal>
+<puesto>Defensa</puesto>
+</jugador>
+<jugador>
+<nombre>Marcelo</nombre>
+<apellidos>Silva</apellidos>
+<sueldo>1800.50</sueldo>
+<dorsal>3</dorsal>
+<puesto>Defensa</puesto>
+</jugador>
+<jugador>
+<nombre>Miguel Ángel</nombre>
+<apellidos>García Corona</apellidos>
+<sueldo>3999.50</sueldo>
+<dorsal>15</dorsal>
+<puesto>Centrocampista</puesto>
+</jugador>
+<jugador>
+<nombre>Modeste</nombre>
+<apellidos>M'Bami</apellidos>
+<sueldo>1880.50</sueldo>
+<dorsal>19</dorsal>
+<puesto>Centrocampista</puesto>
+</jugador>
+<jugador>
+<nombre>Kalu</nombre>
+<apellidos>Uche</apellidos>
+<sueldo>2900.35</sueldo>
+<dorsal>5</dorsal>
+<puesto>Delantero</puesto>
+</jugador>
+<jugador>
+<nombre>José Leonardo</nombre>
+<apellidos>Ulloa</apellidos>
+<sueldo>1899.50</sueldo>
+<dorsal>20</dorsal>
+<puesto>Delantero</puesto>
+</jugador>
+</equipo>
