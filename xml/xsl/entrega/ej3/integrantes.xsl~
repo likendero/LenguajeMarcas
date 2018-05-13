@@ -1,4 +1,4 @@
-<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml version = "1.0" encoding = "ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:preserve-space elements="*"/>
 <xsl:template match = "/">
@@ -7,7 +7,7 @@
 			<title>integrantes</title>
 		</head>
 			<body>
-				<h1> integrantes con sueldo mayor a 2000 €</h1>
+				<h1> integrantes con sueldo mayor a 2000 </h1>
 				<xsl:if test = "equipo/entrenador/sueldo &gt;= 2000">
 					<P>el entrenador <xsl:value-of select="equipo/entrenador/nombre"/>
 					tiene un sueldo superior a 2000€: <xsl:value-of select="equipo/entrenador/sueldo"/>
